@@ -23,7 +23,7 @@ public class GenreController {
 	}
 	
 	@GetMapping
-	public ResponseEntity<List<GenreDTO>> findById() {
+	public ResponseEntity<List<GenreDTO>> findAll() {
 		List<GenreDTO> dto = service.findAll();
 		return ResponseEntity.ok().body(dto);
 	}
